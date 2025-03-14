@@ -1,14 +1,17 @@
 package lab2;
 
-public class Fibonacci {
-    public int getFibOfN(int n){
-        if (n==0) return 0;
-        else if (n==1) return 1;
-        else return this.getFibOfN(n-2)+ this.getFibOfN(n-1);
-    }
+import java.util.ArrayList;
 
-    // STATIC
-    public static int getStaticFibOfN(int n){
-        return this.getFibOfN(n);
+public class Fibonacci {
+    public void getFibOfN(int n){
+        int a = 0, b = 1, c;
+        System.out.print("0 1 ");
+        
+        while(a+b < n){
+            c = a + b;
+            System.out.print(c + " ");
+            a = b;
+            b = c;
+        }
     }
 }

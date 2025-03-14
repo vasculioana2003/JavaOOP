@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
+import lab2.Fibonacci;
 
 /**
  *
@@ -17,6 +17,8 @@ public class Calculator {
         System.out.println("Welcome to calculator. Select an option: 1. Add | 2.Substract | 3. Divide | 4. Multiply | 5. Modulo");
         
         System.out.println("Spreadsheet calculator. Select an option: 6. CellSum | 7. CellIncrement | 8.CellDecrement" );
+
+        System.out.println("| 9. Fibonacci" );
         
         String inputOption = ReadConsole();
         int option = Integer.parseInt(inputOption);
@@ -137,6 +139,7 @@ public class Calculator {
                 
                 break;
 
+            //increment
             case 7:
                 System.out.println("enter a cell value:");
                 Cell c3 = new Cell();                
@@ -148,6 +151,7 @@ public class Calculator {
 
             break;
 
+            //decrement
             case 8:
                 System.out.println("enter a cell value:");
                 Cell c4 = new Cell();                
@@ -165,13 +169,11 @@ public class Calculator {
                 System.out.println("enter a number:");
                 input1 = ReadConsole();
 
-                x = Integer.parseInt(input1);
+                int z = Integer.parseInt(input1);
 
-
-                fib.getFibOfN(x);
-
-                // Static, fara instantiere de "fib"
-                // Fibonacci.getStaticFibOfN(x);
+                System.out.println("Fibonacci numbers smaller than "+input1+": ");
+                fib.getFibOfN(z);
+                System.err.println("");
 
         }  
     }

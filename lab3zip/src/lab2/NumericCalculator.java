@@ -18,9 +18,6 @@ public class NumericCalculator {
     
     public double Difference(double n1, double n2)
     {
-        return n1 - n2;
+        return n1 - n2; // this function
     }
-    
-    
-    
 }
