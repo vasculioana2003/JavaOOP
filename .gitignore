@@ -3,3 +3,7 @@
 *.class
 
 *.vscode
+
+.build.xml
+
+*.build
