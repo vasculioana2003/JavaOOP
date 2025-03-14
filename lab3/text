@@ -1,0 +1,29 @@
+
+variabile:
+-obiectuale(ref  type)
+-primitive|(int, float, char)
+
+
+
+
+//obiect
+class Masa{
+//atribute
+    culoare enum culoare
+    int lungime
+    int latime
+    int inaltime
+//metode
+    void AddToCart()
+    void ViewMore()
+    void ViewPicture()
+
+
+}
+
+
+
+//cum alocam memorie
+|heap: memorie dinamica---malloc (in c), Tank t1 = new Tank() (in java)
+|stack: pointeri
+|static
